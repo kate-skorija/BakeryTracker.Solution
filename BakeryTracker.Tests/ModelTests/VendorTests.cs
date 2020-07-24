@@ -63,5 +63,18 @@ namespace BakeryTracker.Tests
 
       Assert.AreEqual(newVendor2, result);
     }
+    [TestMethod]
+    public void AddOrder_AssociatesOrderWithVendor_OrderList()
+    {
+      Order newOrder = new Order("Test Order", "Test Description", 50, "Test Date", "Test Frequency");
+      List<Order> newList = new List<Order> { newOrder };
+      string name = "Test Vendor";
+      Vendor newVendor = new Vendor(name);
+      newVendor.AddOrder(newOrder);
+
+      List<Order> result = newVendor.Orders;
+
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
