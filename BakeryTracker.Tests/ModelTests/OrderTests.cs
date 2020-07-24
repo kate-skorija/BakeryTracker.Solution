@@ -9,7 +9,7 @@ namespace BakeryTracker.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("Test Order", "Test Description");
+      Order newOrder = new Order("Test Order", "Test Description", 50);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
     [TestMethod]
