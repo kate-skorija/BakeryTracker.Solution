@@ -5,7 +5,7 @@ using BakeryTracker.Models;
 
 namespace BakeryTracker.Controllers
 {
-  public class VendorsController : Controller
+  public class OrdersController : Controller
   {
 
   }
