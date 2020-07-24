@@ -32,9 +32,8 @@ namespace BakeryTracker.Tests
     [TestMethod]
     public void GetDescription_ReturnsOrderDescription_String()
     {
-      string title = "Test Order";
       string description = "Test Description";
-      Order newOrder = new Order(title, description, 50, "Test Date", "Test Frequency");
+      Order newOrder = new Order("Test Order", description, 50, "Test Date", "Test Frequency");
 
       string result = newOrder.Description;
 
@@ -43,23 +42,18 @@ namespace BakeryTracker.Tests
     [TestMethod]
     public void GetPrice_ReturnsOrderPrice_Int()
     {
-      string title = "Test Order";
-      string description = "Test Description";
-      int price = 50;
-      Order newOrder = new Order(title, description, price, "Test Date", "Test Frequency");
+      double price = 50.00;
+      Order newOrder = new Order("Test Order", "Test Description", price, "Test Date", "Test Frequency");
 
-      int result = newOrder.Price;
+      double result = newOrder.Price;
 
       Assert.AreEqual(price, result);
     }
     [TestMethod]
     public void GetDate_ReturnsOrderDate_String()
     {
-      string title = "Test Order";
-      string description = "Test Description";
-      int price = 50;
       string date = "July 15, 2020";
-      Order newOrder = new Order(title, description, price, date, "Test Frequency");
+      Order newOrder = new Order("Test Order", "Test Description", 50, date, "Test Frequency");
 
       string result = newOrder.Date;
 
@@ -68,12 +62,8 @@ namespace BakeryTracker.Tests
     [TestMethod]
     public void GetFrequency_ReturnsOrderFrequency_String()
     {
-      string title = "Test Order";
-      string description = "Test Description";
-      int price = 50;
-      string date = "July 15, 2020";
       string frequency = "Once a week, on Tuesdays";
-      Order newOrder = new Order(title, description, price, date, frequency);
+      Order newOrder = new Order("Test Order", "Test Description", 50, "July 15, 2020", frequency);
 
       string result = newOrder.Frequency;
 
@@ -82,12 +72,7 @@ namespace BakeryTracker.Tests
     [TestMethod]
     public void GetId_ReturnsOrderId_Int()
     {
-      string title = "Test Order";
-      string description = "Test Description";
-      int price = 50;
-      string date = "July 15, 2020";
-      string frequency = "Once a week, on Tuesdays";
-      Order newOrder = new Order(title, description, price, date, frequency);
+      Order newOrder = new Order("Test Order", "Test Description", 50, "July 15, 2020", "Once a week, on Tuesdays");
 
       int result = newOrder.Id;
 
