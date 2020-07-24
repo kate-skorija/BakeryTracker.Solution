@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ToDoList.Models;
+using BakeryTracker.Models;
 using System.Collections.Generic;
 using System;
 
-namespace BakeryTracker.TestTools
+namespace BakeryTracker.Tests
 {
   [TestClass]
   public class VendorTest

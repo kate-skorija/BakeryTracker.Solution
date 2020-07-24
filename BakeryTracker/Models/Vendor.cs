@@ -3,5 +3,8 @@ using System;
 
 namespace BakeryTracker.Models
 {
-  
+  public class Vendor
+  {
+    
+  }
 }
