@@ -11,7 +11,7 @@ namespace BakeryTracker.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Vendor newVendor = new Vendor();
+      Vendor newVendor = new Vendor("Test Vendor");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
     [TestMethod]
