@@ -7,6 +7,16 @@ namespace BakeryTracker.Controllers
 {
   public class OrdersController : Controller
   {
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
+    public ActionResult Show(int vendorId, int orderId)
+    {
+      Order selectedOrder = Order.Find(orderId);
+      Vendor selectedVendor = Vendor.Find(vendorId);
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      model.Add("order", selectedOrder);
+      model.Add("vendor", selectedVendor);
+      return View(model);
 
+    }
   }
 }
