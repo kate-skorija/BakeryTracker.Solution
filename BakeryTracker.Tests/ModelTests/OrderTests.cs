@@ -54,7 +54,7 @@ namespace BakeryTracker.Tests
       string date = "July 15, 2020";
       Order newOrder = new Order(title, description, price, date);
 
-      int result = newOrder.Date;
+      string result = newOrder.Date;
 
       Assert.AreEqual(date, result);
     }
