@@ -10,7 +10,7 @@ This is a basic C# web application for Pierre's Bakery. It was built to help Pie
 
 ## Specifications
 
-**Behavior**: Program will the user to create a vendor.
+**Behavior**: Program will allow the user to create a vendor.
   * Input: "Suzie's Cafe"
   * Output: Suzie's Cafe is now a new vendor object
 
