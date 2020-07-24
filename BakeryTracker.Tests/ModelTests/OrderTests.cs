@@ -16,7 +16,7 @@ namespace BakeryTracker.Tests
     public void GetTitle_ReturnsOrderTitle_String()
     {
       string title = "Test Order";
-      Order newOrder = new Order(title, "Test Description");
+      Order newOrder = new Order(title, "Test Description", 50);
 
       string result = newOrder.Title;
 
@@ -27,12 +27,23 @@ namespace BakeryTracker.Tests
     {
       string title = "Test Order";
       string description = "Test Description";
-      Order newOrder = new Order(title, description);
+      Order newOrder = new Order(title, description, 50);
 
       string result = newOrder.Description;
 
       Assert.AreEqual(description, result);
+    }
+    [TestMethod]
+    public void GetPrice_ReturnsOrderPrice_Int()
+    {
+      string title = "Test Order";
+      string description = "Test Description";
+      int price = 50;
+      Order newOrder = new Order(title, description, price);
 
+      int result = newOrder.Price;
+
+      Assert.AreEqual(price, result);
     }
   }
 }
