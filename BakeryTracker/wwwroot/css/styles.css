@@ -1,16 +1,21 @@
 h1 {
-  color: rgb(22, 8, 39);
+  font-size: 75px;
   font-family: 'Allan', cursive;
-  font-size: 200px;
-  padding: 0;
-  margin-bottom: 0;
-  
 }
 
 h2 {
+  color: rgb(56, 46, 70);
   font-family: 'Bebas Neue', cursive;
-  font-size: 50px;
-  /* font-family: 'Markazi Text', serif; */
+  font-size: 80px;
+  padding-bottom: 15px;
+}
+
+h3 {
+  padding-bottom: 15px;
+}
+
+.vendor a {
+  font-size: 35px;
 }
 
 #splash {
@@ -18,14 +23,44 @@ h2 {
   margin: 100px;
 }
 
+#splash h1 {
+  font-size: 200px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#splash h2 {
+  font-size: 50px;
+}
+
 #splash a {
-  font-family: 'Markazi Text', serif;
-  color: rgb(22, 8, 39);
-  /* font-family: 'Bebas Neue', cursive; */
-  font-size: 40px;
+  font-size: 35px;
+  font-family: 'Merriweather', serif;
+  color: #292929;
 }
 
 body {
-  font-family: 'Markazi Text', serif;
+  margin: 50px;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
   background-color: papayawhip;
+}
+
+a  {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  color: #292929;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+.orders {
+  font-size: 30px;
+  /* color: rgb(22, 8, 39); */
+}
+
+.orders a {
+  font-size: 30px;
 }

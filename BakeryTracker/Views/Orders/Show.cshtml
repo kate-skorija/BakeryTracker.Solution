@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-<h1>@Model["order"].Title Details</h1>
+<h2>@Model["order"].Title Details</h2>
 
 <ul>
   <li>Description: @Model["order"].Description</li>
@@ -12,6 +12,8 @@
   <li>Vendor: @Model["vendor"].Name</li>
 </ul>
 
-<p><a href='/vendors/@Model["vendor"].Id'>Return to @Model["vendor"].Name's Orders</a></p>
-<p><a href='/vendors'>Return to Vendor List</a></p>
-<p><a href='/'>Return to Home Page</a></p>
+<footer>
+  <p><a href='/vendors/@Model["vendor"].Id'>Return to @Model["vendor"].Name's Orders</a></p>
+  <p><a href='/vendors'>Return to Vendor List</a></p>
+  <p><a href='/'>Return to Home Page</a></p>
+</footer>
