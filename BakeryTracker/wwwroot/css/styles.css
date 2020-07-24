@@ -1,3 +1,23 @@
+/* Body -------------------------------- */
+
+body {
+  margin: 50px;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  background-color: papayawhip;
+}
+
+a  {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  color: #292929;
+}
+
+p {
+  font-size: 25px;
+}
+/* Headers ----------------------------- */
+
 h1 {
   font-size: 75px;
   font-family: 'Allan', cursive;
@@ -14,9 +34,7 @@ h3 {
   padding-bottom: 15px;
 }
 
-.vendor a {
-  font-size: 35px;
-}
+/* Splash Page -------------------------- */
 
 #splash {
   text-align: center;
@@ -26,41 +44,52 @@ h3 {
 #splash h1 {
   font-size: 200px;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;;
+  color: rgb(56, 46, 70);
 }
 
 #splash h2 {
-  font-size: 50px;
+  font-family: 'Merriweather', serif;
+  color: #292929;
+  font-size: 40px;
+  margin-top: 0;
 }
 
 #splash a {
-  font-size: 35px;
-  font-family: 'Merriweather', serif;
+  font-size: 60px;
+  font-family: 'Bebas Neue', cursive;
   color: #292929;
 }
 
-body {
-  margin: 50px;
-  font-size: 20px;
-  font-family: 'Merriweather', serif;
-  background-color: papayawhip;
-}
-
-a  {
-  font-family: 'Merriweather', serif;
-  font-size: 20px;
-  color: #292929;
-}
-
-footer {
-  margin-top: 30px;
-}
+/* Vendors and Orders --------------------- */
 
 .orders {
   font-size: 30px;
-  /* color: rgb(22, 8, 39); */
 }
 
 .orders a {
   font-size: 30px;
+}
+
+.vendor a {
+  font-size: 35px;
+}
+
+label{
+
+  float: left;
+  clear: left;
+  width: 190px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input {
+float: left;
+}
+
+/* Footer ---------------------------------- */
+
+footer {
+  margin-top: 30px;
 }
