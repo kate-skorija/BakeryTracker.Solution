@@ -9,14 +9,14 @@ namespace BakeryTracker.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("Test Order", "Test Description", 50, "Test Date");
+      Order newOrder = new Order("Test Order", "Test Description", 50, "Test Date", "Test Frequency");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
     [TestMethod]
     public void GetTitle_ReturnsOrderTitle_String()
     {
       string title = "Test Order";
-      Order newOrder = new Order(title, "Test Description", 50, "Test Date");
+      Order newOrder = new Order(title, "Test Description", 50, "Test Date", "Test Frequency");
 
       string result = newOrder.Title;
 
@@ -27,7 +27,7 @@ namespace BakeryTracker.Tests
     {
       string title = "Test Order";
       string description = "Test Description";
-      Order newOrder = new Order(title, description, 50, "Test Date");
+      Order newOrder = new Order(title, description, 50, "Test Date", "Test Frequency");
 
       string result = newOrder.Description;
 
@@ -39,7 +39,7 @@ namespace BakeryTracker.Tests
       string title = "Test Order";
       string description = "Test Description";
       int price = 50;
-      Order newOrder = new Order(title, description, price, "Test Date");
+      Order newOrder = new Order(title, description, price, "Test Date", "Test Frequency");
 
       int result = newOrder.Price;
 
@@ -52,11 +52,25 @@ namespace BakeryTracker.Tests
       string description = "Test Description";
       int price = 50;
       string date = "July 15, 2020";
-      Order newOrder = new Order(title, description, price, date);
+      Order newOrder = new Order(title, description, price, date, "Test Frequency");
 
       string result = newOrder.Date;
 
       Assert.AreEqual(date, result);
+    }
+    [TestMethod]
+    public void GetFrequency_ReturnsOrderFrequency_String()
+    {
+      string title = "Test Order";
+      string description = "Test Description";
+      int price = 50;
+      string date = "July 15, 2020";
+      string frequency = "Once a week, on Tuesdays";
+      Order newOrder = new Order(title, description, price, date, frequency);
+
+      string result = newOrder.Frequency;
+
+      Assert.AreEqual(frequency, result);
     }
   }
 }
