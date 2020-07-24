@@ -7,6 +7,13 @@ namespace BakeryTracker.Controllers
 {
   public class OrdersController : Controller
   {
+    [HttpGet("/vendors/{vendorId}/orders/new")]
+    public ActionResult New(int vendorId)
+    {
+      Vendor selectedVendor = Vendor.Find(vendorId);
+      return View(selectedVendor);
+    }
+
     [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
@@ -16,7 +23,6 @@ namespace BakeryTracker.Controllers
       model.Add("order", selectedOrder);
       model.Add("vendor", selectedVendor);
       return View(model);
-
     }
   }
 }
