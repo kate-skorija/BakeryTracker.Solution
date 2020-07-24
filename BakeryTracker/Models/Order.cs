@@ -8,12 +8,14 @@ namespace BakeryTracker.Models
     public string Description { get; set; }
     public int Price { get; set; }
     public string Date { get; set; }
-    public Order(string title, string description, int price, string date)
+    public string Frequency { get; set; }
+    public Order(string title, string description, int price, string date, string frequency)
     {
       Title = title;
       Description = description;
       Price = price;
       Date = date;
+      Frequency = frequency;
     }
   }
 }
