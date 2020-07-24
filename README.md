@@ -14,11 +14,11 @@ This is a basic C# web application for Pierre's Bakery. It was built to help Pie
   * Input: "Suzie's Cafe"
   * Output: Suzie's Cafe is now a new vendor object
 
-**Behavior**: Program will allow the user to track specific orders for each vendor added.
-  * Input: "Suzie's Cafe", "50 croissants a week"
-  * Output: An order of 50 croissants is added to Suzie's Cafe vendor object
+**Behavior**: Program will allow the user to track specific orders for each vendor added. User can enter a title, description, price, date, and frequency for their order.
+  * Input: "Suzie's Cafe", "'Croissants', '50 chocolate croissants' '$40', 'July 15, 2020','Once a week'"
+  * Output: An order of croissants is added to Suzie's Cafe vendor object
 
-**Behavior**: Program will have a welcome page where users can choose to view the current list of vendors.
+**Behavior**: Program will have a homepage where users can choose to view the current list of vendors.
   * Input: *User clicks "View vendors"*
   * Output: User is taken to a page with a list of vendors
 
@@ -26,11 +26,11 @@ This is a basic C# web application for Pierre's Bakery. It was built to help Pie
   * Input: *User clicks "Add a new vendor"*
   * Output: User is taken to a form to add a new vendor
 
-**Behavior**: Program will return user to the vendor list page after submission of the vendor form. 
+**Behavior**: Program will return user to the homepage after submission of the vendor form. 
   * Input: *User submits new vendor form*
-  * Output: User is taken to vendor list page
+  * Output: User is taken to the homepage
 
-**Behavior**: Program will have a detail page for each vendor that list that vendor's orders.
+**Behavior**: Program will have a detail page for each vendor that lists that vendor's orders.
   * Input: *User clicks "Suzie's Cafe"*
   * Output: User is taken to a page with a list of Suzie's Cafe's orders
 

@@ -22,7 +22,7 @@ namespace BakeryTracker.Controllers
     public ActionResult Create(string vendorName)
     {
       Vendor newVendor = new Vendor(vendorName);
-      return RedirectToAction("Index");
+      return Redirect ("/");
     }
     [HttpGet("/vendors/{id}")]
     public ActionResult Show(int id)
@@ -43,7 +43,7 @@ namespace BakeryTracker.Controllers
       foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);
-      model.Add("category", foundVendor);
+      model.Add("vendor", foundVendor);
       return View("Show", model);
     }
   }
