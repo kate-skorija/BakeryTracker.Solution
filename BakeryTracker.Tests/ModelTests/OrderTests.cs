@@ -16,7 +16,7 @@ namespace BakeryTracker.Tests
     public void GetTitle_ReturnsOrderTitle_String()
     {
       string title = "Test Order";
-      Order newOrder = new Order(title);
+      Order newOrder = new Order(title, "Test Description");
 
       string result = newOrder.Title;
 
