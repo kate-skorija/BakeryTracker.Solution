@@ -47,7 +47,7 @@ namespace BakeryTracker.Tests
       Vendor newVendor2 = new Vendor(name2);
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
 
-      List<Vendor> result = VendorTest.GetAll();
+      List<Vendor> result = Vendor.GetAll();
 
       CollectionAssert.AreEqual(newList, result);
     }
