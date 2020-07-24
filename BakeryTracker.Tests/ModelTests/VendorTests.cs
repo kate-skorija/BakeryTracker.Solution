@@ -34,7 +34,7 @@ namespace BakeryTracker.Tests
       string name = "Test Vendor";
       Vendor newVendor = new Vendor(name);
 
-      string result = newVendor.Id;
+      int result = newVendor.Id;
 
       Assert.AreEqual(1, result);
     }
