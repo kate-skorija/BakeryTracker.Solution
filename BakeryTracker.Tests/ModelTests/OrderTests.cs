@@ -72,5 +72,19 @@ namespace BakeryTracker.Tests
 
       Assert.AreEqual(frequency, result);
     }
+    [TestMethod]
+    public void GetId_ReturnsOrderId_Int()
+    {
+      string title = "Test Order";
+      string description = "Test Description";
+      int price = 50;
+      string date = "July 15, 2020";
+      string frequency = "Once a week, on Tuesdays";
+      Order newOrder = new Order(title, description, price, date, frequency);
+
+      int result = newOrder.Id;
+
+      Assert.AreEqual(1, result);
+    }
   }
 }
