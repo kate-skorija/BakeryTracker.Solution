@@ -3,7 +3,6 @@ using BakeryTracker.Models;
 using System.Collections.Generic;
 using System;
 
-
 namespace BakeryTracker.Tests
 {
   [TestClass]
