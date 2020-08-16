@@ -8,14 +8,14 @@
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
   <label for="orderTitle">Order Title:</label>
-  <input id="orderTitle" name="orderTitle" type="text"><br>
+  <input id="orderTitle" name="orderTitle" type="text" required><br>
   <label for="orderDate">Order Date:</label>
-  <input id="orderDate" name="orderDate" type="text"><br>
+  <input id="orderDate" name="orderDate" type="text" required><br>
   <label for="orderDescription">Order Description:</label>
-  <input id="orderDescription" name="orderDescription" type="text"><br>
+  <input id="orderDescription" name="orderDescription" type="text" required><br>
   <label for="orderPrice">Order Price:</label>
-  <input id="orderPrice" name="orderPrice" type="number" min="0" step=".01"><br>
+  <input id="orderPrice" name="orderPrice" type="number" min="0" step=".01" required><br>
   <label for="orderFrequency">Order Frequency:</label>
-  <input id="orderFrequency" name="orderFrequency" type="text"><br><br><br>
+  <input id="orderFrequency" name="orderFrequency" type="text" required><br><br><br>
   <button class="btn btn-dark"type="submit">Add Order</button>
 </form>

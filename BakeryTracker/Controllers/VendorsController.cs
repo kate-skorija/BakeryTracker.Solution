@@ -22,7 +22,7 @@ namespace BakeryTracker.Controllers
     public ActionResult Create(string vendorName)
     {
       Vendor newVendor = new Vendor(vendorName);
-      return Redirect ("/");
+      return Redirect ("/vendors");
     }
     [HttpGet("/vendors/{id}")]
     public ActionResult Show(int id)
